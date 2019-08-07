@@ -16,11 +16,22 @@ public class A_ProgrammingTerm {
     
     // Main Program
     public static void main (String[] args) {
+        int x = 6;
+        proc1(x);
+        x = func1(x);
+        System.out.println("x in main: " + x);
+    }
+    
+    
+    // Procedures and Functions
+    
+    // Demo Programming Terms 1
+    private static void demoProgrammingTerms1() {
         // say hello
         Date now = new Date();
         writeToConsole("Hello World at " + formatDate(now));
         writeToFile("Hello World in File at " + formatDate(now));
-
+    
         // solve equation: a*x*x + b*x + c = 0
         // get input of a,b,c
         float a,b,c;
@@ -31,10 +42,10 @@ public class A_ProgrammingTerm {
         b = scanner.nextFloat();
         writeToConsole("Please enter c: ");
         c = scanner.nextFloat();
-
+    
         // calculate delta
         double delta = b*b - 4*a*c;
-
+    
         // check delta value to calculate roots
         if (delta < 0) {
             writeToConsole("No root");
@@ -44,24 +55,11 @@ public class A_ProgrammingTerm {
             double root1 = (-b + Math.sqrt(delta))/(2*a);
             writeToConsole("root 1: " + formatRoot(root1));
             writeToFile("root 1: " + formatRoot(root1));
-
+        
             double root2 = (-b - Math.sqrt(delta))/(2*a);
             writeToConsole("root 2: " + formatRoot(root2));
             writeToFile("root 2: " + formatRoot(root2));
         }
-        
-        //demoCoreProgrammingTerms1();
-        //demoCoreProgrammingTerms2();
-    }
-    
-    
-    // Procedures and Functions
-    private static void demoCoreProgrammingTerms1() {
-
-    }
-    
-    private static void demoCoreProgrammingTerms2() {
-
     }
     
     private static void writeToConsole(Object text) {
@@ -102,4 +100,18 @@ public class A_ProgrammingTerm {
         return String.format("%.2f", root);
     }
     
+    
+    // Demo Programming Terms 2
+    private static void proc1(int x) {
+        x++;
+        x = func1(x);
+        System.out.println("x in proc1: " + x);
+    }
+    
+    private static int func1(int x) {
+        x -= 3;
+        System.out.println("x in func1: " + x);
+        
+        return x;
+    }
 }

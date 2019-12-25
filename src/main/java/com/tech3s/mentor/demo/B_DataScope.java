@@ -12,14 +12,15 @@ import java.util.Scanner;
  * homertruong
  */
 
-public class A_ProgrammingTerm {
+public class B_DataScope {
     
     // Main Program
     public static void main (String[] args) {
         int x = 6;
-        proc1(x);
-        x = func1(x);
         System.out.println("x in main: " + x);
+        proc1(x);
+        x = proc2(x);
+        System.out.println("x in main after calling proc1, proc2: " + x);
     }
     
     
@@ -104,13 +105,13 @@ public class A_ProgrammingTerm {
     // Demo Programming Terms 2
     private static void proc1(int x) {
         x++;
-        x = func1(x);
+        x = proc2(x);
         System.out.println("x in proc1: " + x);
     }
     
-    private static int func1(int x) {
+    private static int proc2(int x) {
         x -= 3;
-        System.out.println("x in func1: " + x);
+        System.out.println("x in proc2: " + x);
         
         return x;
     }

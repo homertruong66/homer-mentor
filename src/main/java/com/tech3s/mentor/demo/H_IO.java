@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-public class H_SalesOrder1 {
+public class H_IO {
     
     // Main Program
 	public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class H_SalesOrder1 {
         System.out.println("Import Products...");
 
         List<Product> products = new ArrayList<>();
-        File          file     = new File("E:\\Work\\Project\\jcoder\\src\\com\\tech3s\\jcoder\\products.csv");
+        File          file     = new File("e:\\Work\\Project\\tech3s-mentor\\src\\main\\java\\com\\tech3s\\mentor\\products.csv");
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8));
             String line;

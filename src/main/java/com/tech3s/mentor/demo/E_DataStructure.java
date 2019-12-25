@@ -6,14 +6,14 @@ import com.tech3s.mentor.model.Product;
 
 import java.util.*;
 
-public class D_DataStructure {
+public class E_DataStructure {
 	
 	// Main Program
 	public static void main(String[] args) {
 		// Array
 		int[] integers = new int[] {1,61,4,16,2,4,7,8,5,2,1,22,44,6,66};
 
-		System.out.println("Find first number 6 in the list: " + Arrays.toString(integers));
+		System.out.println("Find first number 6 in the ARRAY: " + Arrays.toString(integers));
 
 		boolean found = false;
 		for (int i = 0; i < integers.length ; i++) {
@@ -43,14 +43,14 @@ public class D_DataStructure {
 			productSet.add(product);
 		}
 
-		System.out.println("\nProducts from list: ");
+		System.out.println("\nProducts from LIST: ");
 		for (Product product: productList) {
 			if (product.getPrice() >= 100) {
 				System.out.println(product);
 			}
 		}
 
-		System.out.println("\nProducts from set: ");
+		System.out.println("\nProducts from SET: ");
 		for (Product product: productSet) {
 			if (product.getPrice() >= 100) {
 				System.out.println(product);
@@ -90,7 +90,7 @@ public class D_DataStructure {
 		sonNode.setCustomer(son);
 		rootNode.setRight(sonNode);
 		
-		System.out.println("Binary family tree: " + rootNode);
+		System.out.println("\nBinary family TREE: " + rootNode);
 	}
 
 }

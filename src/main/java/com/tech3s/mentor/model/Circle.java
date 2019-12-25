@@ -1,6 +1,8 @@
 package com.tech3s.mentor.model;
 
 public class Circle extends Shape {
+    
+    private int radius;
 
     @Override
     public void draw() {
@@ -19,7 +21,16 @@ public class Circle extends Shape {
     }
 
     @Override
-    public void area() {
+    public void calculateArea() {
         System.out.println("Area of Circle: " + Math.PI * this.getRadius() * this.getRadius());
+    }
+    
+    // getters/setters
+    public int getRadius() {
+        return radius;
+    }
+    
+    public void setRadius(int radius) {
+        this.radius = radius;
     }
 }

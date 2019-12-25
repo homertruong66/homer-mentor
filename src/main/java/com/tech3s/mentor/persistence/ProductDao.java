@@ -10,9 +10,9 @@ public class ProductDao {
     
     // JDBC driver name and database URL
     private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    private static final String DB_URL      = "jdbc:mysql://localhost:3306/jcoder";
+    private static final String DB_URL      = "jdbc:mysql://localhost:3306/programming";
     
-    // F_Database credentials
+    // G_Database credentials
     private static final String USER = "root";
     private static final String PASS = "admin";
     

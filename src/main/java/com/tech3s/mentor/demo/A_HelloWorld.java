@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class B_HelloWorld {
+public class A_HelloWorld {
 
 	// Main Program
 	public static void main(String[] args) {

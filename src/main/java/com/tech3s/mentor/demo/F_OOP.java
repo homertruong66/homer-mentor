@@ -5,7 +5,7 @@ import com.tech3s.mentor.model.Rectangular;
 import com.tech3s.mentor.model.Shape;
 import com.tech3s.mentor.model.Square;
 
-public class E_OOP {
+public class F_OOP {
 	
 	// Main Program
 	public static void main(String[] args) {
@@ -34,14 +34,14 @@ public class E_OOP {
 	
 	// Utilities
 	private static void playWithShape(Shape shape) {
-		System.out.println(shape);	// inheritance
-		shape.draw();				// polymorphism
+		System.out.println(shape);	// Inheritance
+		shape.draw();				// Polymorphism
 		if (shape instanceof Circle) {
 			Circle circle = (Circle) shape;
 			circle.draw("RED");
 		}
-		shape.area();				// polymorphism
-		shape.erase();				// polymorphism
+		shape.calculateArea();		// Polymorphism
+		shape.erase();				// Polymorphism
 		System.out.println();
 	}
 

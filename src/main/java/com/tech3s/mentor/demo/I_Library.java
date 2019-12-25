@@ -5,7 +5,7 @@ import com.tech3s.mentor.lib.MathLibrary;
 import java.util.List;
 import java.util.Scanner;
 
-public class G_Library {
+public class I_Library {
 	
 	// Main Program
 	public static void main(String[] args) {	

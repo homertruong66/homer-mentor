@@ -6,7 +6,7 @@ import com.tech3s.mentor.persistence.ProductDao;
 import java.util.List;
 import java.util.UUID;
 
-public class F_Database {
+public class G_Database {
 	
 	// Main Program
 	public static void main(String[] args) {

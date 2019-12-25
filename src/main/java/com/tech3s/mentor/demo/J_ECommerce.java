@@ -7,7 +7,7 @@ import com.tech3s.mentor.model.Product;
 
 import java.util.*;
 
-public class H_SalesOrder2 {
+public class J_ECommerce {
 	
 	// Main Program
 	public static void main(String[] args) {
